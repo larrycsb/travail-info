@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +7,95 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- En-tête avec Photo de profil -->
     <header>
         <div class="header-container">
-            <img src="path_to_profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+            <img src="profile.jpg" alt="Photo de Lorenzo Eliasz" class="profile-picture">
             <h1>Lorenzo Eliasz</h1>
-            <img src="path_to_avatar_image.gif" alt="Sportive Avatar" class="header-avatar">
+            <img src="avatar.gif" alt="Avatar Sportif" class="header-avatar">
         </div>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#introduction">Présentation</a></li>
+            <li><a href="#cv">Résumé / CV</a></li>
+            <li><a href="#projets">Projets Clés</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Sections principales -->
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello, I'm Lorenzo Eliasz, a dynamic and versatile individual...</p>
+        <!-- Présentation -->
+        <section id="introduction">
+            <h2>Introduction / Présentation personnelle</h2>
+            <p>Je m’appelle <strong>Lorenzo Eliasz</strong>, j’ai 19 ans. Actuellement étudiant en Licence Professionnelle à l’ILEPS, je me forme dans le <strong>sport business</strong>. Mon objectif est d’intégrer une grande école de commerce pour un Mastère, tout en valorisant mes compétences acquises.</p>
+            <p>Passionné par l’entrepreneuriat et le digital, je souhaite orienter ma carrière vers l’international.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Here are some of my recent works:</p>
-            <img src="path_to_project_image.jpg" alt="Project Image" class="project-img">
+
+        <!-- Résumé / CV -->
+        <section id="cv">
+            <h2>Résumé / CV</h2>
+            <ul>
+                <li><strong>2022 :</strong> Business Developer chez NG SPORTS CONSULTING.</li>
+                <li><strong>2023 :</strong> Conseiller de vente chez Decathlon, Parly 2.</li>
+                <li><strong>2023-2024 :</strong> Conseiller de vente chez Rossignol, Paris.</li>
+                <li><strong>2024 :</strong> Commercial B2B à l'Hippodrome Paris-Vincennes (SETF).</li>
+                <li><strong>Certifications :</strong> TOEIC (901/990), TAGE MAGE (305/600), DEUST validé.</li>
+            </ul>
         </section>
+
+        <!-- Projets clés -->
+        <section id="projets">
+            <h2>Projets Clés</h2>
+            <p><strong>Objectif :</strong> Augmentation des ventes chez Rossignol.</p>
+            <p><strong>Mon Rôle :</strong> Mise en place de stratégies commerciales et gestion d’équipe.</p>
+            <p><strong>Résultats :</strong> Augmentation de 18% des ventes.</p>
+            <img src="project.jpg" alt="Diagramme des ventes" class="project-img">
+        </section>
+
+        <!-- Compétences techniques -->
+        <section id="competences">
+            <h2>Compétences Techniques et Outils</h2>
+            <ul>
+                <li>Pack Office</li>
+                <li>Rédaction d’emails marketing / prospection</li>
+                <li>Conception graphique : Canva</li>
+            </ul>
+        </section>
+
+        <!-- Réalisations et Recommandations -->
+        <section id="realisations">
+            <h2>Réalisations et Recommandations</h2>
+            <ul>
+                <li><strong>Prime de ventes :</strong> 10/12 atteints chez Rossignol.</li>
+                <li><strong>Recommandation :</strong> “Lorenzo est un collaborateur proactif et fiable.” - Catherine Garrucho, SETF.</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
+            <p>Email : <a href="mailto:l.eliasz@ileps.f">l.eliasz@ileps.f</a></p>
+            <p>Téléphone : 07 81 30 16 22</p>
+            <p>LinkedIn : <a href="https://linkedin.com/in/lorenzoeliasz">lorenzoeliasz</a></p>
             <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send</button>
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
             </form>
         </section>
     </main>
+
+    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Lorenzo Eliasz. All rights reserved.</p>
+        <p>&copy; 2024 Lorenzo Eliasz - Portfolio</p>
     </footer>
 </body>
 </html>
+

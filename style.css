@@ -14,50 +14,14 @@ header {
     color: white;
     text-align: center;
     padding: 2rem 0;
-    position: relative;
-}
-
-.header-container {
-    position: relative;
-}
-
-.header-container img.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .header-container h1 {
     margin: 0;
-    font-size: 4rem; /* Augmenté pour occuper toute la place */
+    font-size: 3rem;
     font-weight: bold;
-    margin-top: 200px; /* Ajuste pour laisser place à la photo */
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-/* Avatar de sportif animé */
-.header-avatar {
-    position: absolute;
-    bottom: -30px;
-    right: 10%;
-    width: 150px;
-    height: 150px;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
 }
 
 nav {
@@ -121,17 +85,8 @@ ul {
     list-style: square inside;
 }
 
-.project-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Formulaire de contact */
 .contact-form {
-    background: linear-gradient(to bottom, #ffffff, #e6f7ff); /* Doux dégradé pour contact */
+    background: linear-gradient(to bottom, #ffffff, #e6f7ff); /* Dégradé doux pour formulaire */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -175,52 +130,6 @@ footer p {
     font-size: 1rem;
 }
 
-/* Fun Animations */
-header {
-    animation: fadeIn 2s ease;
-}
-
-section {
-    animation: slideUp 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Button Styling for Interactivity */
-button {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #005bb5;
-    transform: scale(1.1);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -237,7 +146,7 @@ button:hover {
     }
 
     .header-container h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     section {

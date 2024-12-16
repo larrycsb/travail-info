@@ -3,18 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #e6f7ff, #cce0ff); /* Dégradé bleu clair */
+    background: linear-gradient(to bottom, #007acc, #cce0ff); /* Dégradé de bleu */
     color: #1a1a1a;
     line-height: 1.6;
     transition: background-color 0.3s ease;
 }
 
 header {
-    background: linear-gradient(to right, #007acc, #005bb5); /* Dégradé bleu vif */
+    background: linear-gradient(to right, #004d99, #007acc); /* Dégradé bleu vif */
     color: white;
     text-align: center;
     padding: 2rem 0;
-    position: relative;
 }
 
 .header-container h1 {
@@ -23,59 +22,6 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.header-container img.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid white;
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: slideDown 1.5s ease-in-out;
-}
-
-.header-avatar {
-    position: absolute;
-    bottom: -40px;
-    right: 5%;
-    width: 100px;
-    height: 100px;
-    animation: float 3s ease-in-out infinite;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
 }
 
 nav {
@@ -121,7 +67,6 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: fadeInUp 1s ease-in-out;
 }
 
 section:hover {
@@ -137,26 +82,12 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-.project-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.project-img:hover {
-    transform: scale(1.05);
-}
-
 /* Formulaire de contact */
 .contact-form {
-    background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+    background: linear-gradient(to bottom, #ffffff, #e6f7ff); /* Dégradé doux pour formulaire */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .contact-form input, .contact-form textarea {
@@ -185,29 +116,16 @@ h2 {
 }
 
 footer {
-    background: linear-gradient(to right, #004d99, #002d66);
+    background: linear-gradient(to right, #004d99, #002d66); /* Dégradé bleu foncé */
     color: white;
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 2rem;
-    animation: fadeIn 2s ease-in-out;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 /* Responsive Design */

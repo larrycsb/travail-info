@@ -14,19 +14,73 @@ header {
     color: white;
     text-align: center;
     padding: 2rem 0;
+    position: relative;
 }
 
 .header-container h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 3.5rem; /* Taille augmentée pour dynamisme */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header-container img.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 1.5s ease-in-out;
+}
+
+.header-avatar {
+    position: absolute;
+    bottom: -40px;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 nav {
-    background-color: #004d99; /* Bleu foncé */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #004d99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -47,7 +101,7 @@ nav ul li a {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -66,30 +120,43 @@ section {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 section:hover {
     transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
     color: #007acc;
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     border-bottom: 2px solid #007acc;
     padding-bottom: 0.5rem;
 }
 
-ul {
-    list-style: square inside;
+.project-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+/* Formulaire de contact */
 .contact-form {
-    background: linear-gradient(to bottom, #ffffff, #e6f7ff); /* Dégradé doux pour formulaire */
+    background: linear-gradient(to bottom, #ffffff, #e6f7ff);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .contact-form input, .contact-form textarea {
@@ -118,16 +185,29 @@ ul {
 }
 
 footer {
-    background: linear-gradient(to right, #004d99, #002d66); /* Dégradé bleu foncé */
+    background: linear-gradient(to right, #004d99, #002d66);
     color: white;
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Responsive Design */
@@ -146,7 +226,7 @@ footer p {
     }
 
     .header-container h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     section {
